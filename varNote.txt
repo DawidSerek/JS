@@ -1,0 +1,8 @@
+the keyword:
+const - defines constant which prohibits reasigning values
+let - defines variable (new implementation; disallows outside scope)
+var - defines variable (old implementation; supports older browsers)
+
+type operators 
+typeof	Returns the type of a variable
+instanceof	Returns true if an object is an instance of an object type

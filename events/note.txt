@@ -1,0 +1,7 @@
+events are "things" that happen to HTML elements - depending on event
+
+the syntax for events is as follows:
+<element event='some JavaScript'>
+
+for further refrence visit:
+https://www.w3schools.com/jsref/dom_obj_event.asp

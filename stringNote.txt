@@ -1,0 +1,52 @@
+to access length of a string:
+string.length
+
+escape characters:
+\" - "
+\' - '
+\\ - \
+
+You can break up a code line within a text string with a single backslash:
+Example
+document.getElementById("demo").innerHTML = "Hello \
+Dolly!";
+
+or + operator
+
+String also contains following methods:
+slice(p1,p2) - take substring from index p1 to p2 (w/o p2, like in python)
+substring(p1,p2) - works same way, but negative values are treated as 0 
+substr(p1,p2) - same way, but p2 is length of substring that has been cut from p1 position
+replace(p1, p2) - replaces first occurances of p1 with p2
+replace(/p1/x, p2) - adds x flag:
+g - global occurances
+i - case insensitive occurances
+toUpperCase()
+toLowerCase()
+concat(p1,p2)
+trim() - removes whitespaces from prefix and sufix
+padStart(p1, p2), padEnd(p1,p2) - adds string padding of an size p1 constisting of p2
+charAt(p1) - acess char at p1
+charCodeAt(p1) - acces code of char atp2
+split(p1) - splits to an array whenever p1 occurs. Use "" to split entire string
+
+You can also use methods to search through string:
+indexOf(p1,p2), lastIndexOf(p1, p2) - searches for first occurance of p1 starting from p2
+search(p1) - searches with regular expressions
+match(/p1/x) - searches based on regEx and returns an array with all matches
+includes(p1) - returns boolean if p1 is included
+startsWith(p1, p2), endsWith(p1, p2) - same, for prefix and sufix, where p2 is length of search
+
+template:
+string defined with value as `` will have changed properties. It will be insensitive to "" and '' clauses, and will allow interpolation with ${...} syntax.
+
+Example
+let header = "Templates Literals";
+let tags = ["template literals", "javascript", "es6"];
+
+let html = `<h2>${header}</h2><ul>`;
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
